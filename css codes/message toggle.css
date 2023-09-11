@@ -1,0 +1,226 @@
+.message-toggle{
+  margin-left: 64px;
+  background-color: rgb(250, 249, 249);
+  position: fixed;
+  width: 350px;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+  margin-top: 10px;
+  border-left: 1px solid rgb(226, 224, 224);
+  left: -413px;
+  transition: left 0.7s ease;
+  z-index: 3;
+}
+.message-toggle-active{
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 10px;
+}
+.name-div{
+  display: flex;
+  margin-left: 15px;
+}
+.drop-down-icon,.new-message-icon{
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.drop-down-icon:hover,.new-message-icon:hover{
+  background-color: rgb(236, 234, 234);
+}
+.new-message-icon{
+  margin-left: 130px;
+}
+.drop-down-icon{
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+}
+.message-name{
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.message-request-div{
+  display: flex;
+}
+.message-text{
+  font-weight: 700;
+  margin-right: 160px;
+  margin-left: 15px;
+}
+.message-request{
+  color: rgb(0, 110, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+.fixed-message-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0px;
+  width: 350px;
+  background-color:  rgb(250, 250, 250);
+  margin-left: 64px;
+  border-left: 1px solid rgb(226, 224, 224);
+  left: -413px;
+  transition: left 0.7s ease;
+}
+.message-profile{
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+.message-receiver-profile{
+  position: relative;
+  top: 120px;
+  left: 15px;
+  display: flex;
+  padding-bottom: 13px;
+  background-color:  rgb(250, 250, 250);
+  z-index: -1;
+}
+.message-receiver-profile:hover{
+  cursor: pointer;
+  background-color: rgb(231, 228, 228);
+}
+.message-receiver-profile-name p{
+  font-size: 15px;
+  margin-top: 5px;
+}
+.message-receiver-profile-name p.message-profile-time{
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.message-time{
+  color: rgb(39, 39, 39);
+  font-weight: 700;
+}
+.right-message-grid{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgb(250, 250, 250);
+  left: 413px;
+  bottom: 0;
+  overflow: scroll;
+  padding-bottom: 200px;
+  width: 70%;
+  left: -970px;
+  transition: left 0.7s ease;
+}
+
+/*
+ message-chat-icon
+*/
+.message-chat-icon{
+  width: 60px;
+  border-radius: 60px;
+}
+.message-chat-icon-container{
+  border: 2px solid black;
+  padding: 20px;
+  width: 60px;
+  border-radius: 80px;
+  margin-left: 100px;
+}
+.chat-place{
+  margin-left: 30%;
+  margin-top: 13rem;
+}
+.send-message{
+  background-color: rgb(0, 162, 255);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 12px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.send-message:hover{
+  background-color: rgb(6, 144, 224);;
+}
+.your-messages{
+  font-size: 30px;
+  margin-left: 50px;
+}
+.send-private-messages{
+  margin-left: -40px;
+}
+.juiceworld-image-profile-picture{
+  position: relative;
+}
+.message-user-active-indicator{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 3px;
+  margin-right: 20px ;
+  background-color: rgb(12, 214, 12);
+  color:rgb(12, 214, 12);
+  border: 3px solid white;
+  border-radius: 100%;
+  padding: 7px;
+}
+.message-verification-icon{
+  width:  30px;
+  position: absolute;
+  border-radius: 50px;
+  top: 0;
+  right: 0;
+  margin-right: 58%;
+}
+.message-verification-icon-cristiano{
+  width:  30px;
+  position: absolute;
+  border-radius: 50px;
+  top: 0;
+  right: 0;
+  margin-right: 33%;
+}
+
+
+/* java script segment*/
+.show{
+  left: 0;
+}
+.right-show{
+  left: 413px;
+}
+.drop-down-icon-container{
+  position: relative;
+}
+.content-of-drop-down{
+  position: absolute;
+  background-color: rgb(241, 241, 241);
+  top: 10vh;
+  left: -8rem;
+  width:  322px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.content-of-drop-down-show{
+  visibility: visible;
+}
+.switch-account-message{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 100px;
+}
+.switch-account-message-container{
+  border-bottom: 2px solid rgb(206, 206, 206);
+}
+.user-switch-account{
+  margin-left: 10px;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+.user-switch-account-container{
+  display: flex;
+  gap: 13rem;
+}

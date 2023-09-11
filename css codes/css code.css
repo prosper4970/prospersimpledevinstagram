@@ -1,0 +1,319 @@
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  padding-bottom: 100px;
+}
+.story-images{
+  display: flex;
+  column-gap: 10px;
+  margin-left: 20%;
+  position: relative;
+}
+.story-one
+,.story-two
+,.story-three
+,.story-four
+,.story-five
+,.story-six
+,.story-seven
+,.story-eight{
+  width: 50px;
+  border-radius: 50px;
+  border: 2px solid rgb(245, 2, 172);
+  margin-left: 10%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.story-five{
+  margin-left: 20%;
+}
+.story-six{
+  margin-left: 20%;
+}
+
+.tool-tip{
+  font-size: 12px;
+  margin-left: 2px;
+  background-color: rgb(83, 82, 82);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -25px;
+  opacity: 0;
+}
+
+ .fisayo-fosudo-profile-picture:hover .tool-tip
+ ,.David_micheal-profile-picture:hover .tool-tip
+ ,.Dev-slopes-profile-picture:hover .tool-tip
+ ,.Prosper_js-profile-picture:hover .tool-tip
+ ,.Cristiano_ronaldo-profile-picture:hover .tool-tip
+ ,.Funke_akindele-profile-picture:hover .tool-tip
+ ,.George-paper-profile-picure:hover .tool-tip
+ ,.Mr_Beast-profile-picture:hover .tool-tip{
+  opacity: 1;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nameone{
+  font-size: 13px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+.posts{
+  display: grid;
+  grid-template-columns: 53px 67px 30px 20% 100%;
+  margin-left: 29%;
+  margin-top: 4%;
+  border-bottom: 1px solid rgb(204, 203, 203);
+  border-top: 1px solid rgb(204, 203, 203);
+  padding-left: 40px;
+  width: 450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.profile-picture{
+  width: 40px;
+  border-radius: 40px;
+  border: 2px solid rgb(245, 2, 172);
+  cursor: pointer;
+}
+.profile-name{
+  font-size: 13px;
+}
+.verification-icon{
+  width: 30px;
+  margin-top: 5px;
+}
+.time{
+  color: rgb(85, 82, 82);
+  font-size: 13px;
+}
+.more-icon{
+  width: 15px;
+  margin-top: 12px;
+  margin-left: 31%;
+}
+
+.posted-picture{
+  width: 400px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.react-container{
+  display: flex;
+  column-gap: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.react-container img{
+  width: 25px;
+}
+.react-container img:active{
+  transform: translatey(4px);
+}
+.save-icon{
+  margin-left: 230px;
+}
+.comment{
+  margin-left: 12.5px;
+  width: 150px;
+  font-size: 15px;
+}
+
+
+/*LEFT MENU STYLE*/
+
+.left-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: lightgray;
+  width: 17%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-right: 1px solid rgb(206, 206, 206) ;
+  padding-right: 9px;
+}
+
+.instagram-logo{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 0 5px;
+  overflow: hidden;
+}
+
+div.home-container
+,.search-container
+,.explore-container
+,.reels-container
+,.message-container
+,.love-container
+,.create-container
+,.profile-container
+,.more-container{
+  display: grid;
+  grid-template-columns: 40px 20px;
+  margin-left: 20px;
+  padding: 3px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.love-container-count{
+  position: relative;
+}
+.counter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding-left: 2px; 
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 100%;
+  font-size: 13px;
+}
+
+
+div.home-container:hover
+,.search-container:hover
+,.explore-container:hover
+,.reels-container:hover
+,.message-container:hover
+,.love-container:hover
+,.create-container:hover
+,.profile-container:hover
+,.more-container:hover{
+  background-color: rgb(238, 236, 236);
+  border-radius: 10px;
+}
+
+div.home-container img
+,.search-container img
+,.explore-container img
+,.reels-container img
+,.message-container img
+,.love-container img
+,.create-container img
+,.more-container img{
+  width: 30px;
+  margin-top: 7px;
+}
+div.profile-container img{
+  width: 30px;
+  border-radius: 30px;
+  margin-top: 9px;
+}
+
+/* Right menu style*/
+
+.right-menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: white;
+}
+.profile-picture-right{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.profile-right-container{
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+.profile-name-container{
+  margin-top: 12px;
+}
+.switch{
+  color: rgb(29, 29, 255);
+  margin-left: 215%;
+  font-size: 14px;
+}
+div.profile-name-container p{
+  font-size: 13px;
+}
+div.Suggested-for-you-container{
+  display: flex;
+}
+
+div.Suggested-for-you-container p{
+  font-size: 13px;
+  color: rgb(83, 83, 83);
+}
+.see-all{
+  margin-left: 40%;
+}
+.Suggested-profile-picture{
+  width: 30px;
+  border-radius: 30px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.Suggested-for-you{
+  display: flex;
+  column-gap: 13px;
+}
+.Suggested-for-you-name{
+  font-size: 14px;
+}
+.follow{
+  color: rgb(29, 29, 255);
+  margin-left: 25%;
+  font-size: 14px;
+  cursor: pointer;
+}
+.Suggested-for-you-text{
+  font-size: 12px;
+}
+.Suggested-for-you-name-text{
+  font-weight: 700;
+}
+
+/*following text*/
+
+.following{
+  color : rgb(90, 89, 89)
+}
+
+.display-like{
+  color: rgb(80, 79, 79);
+  width: 500px;
+  font-size: 15px;
+  margin-left: 13px; 
+  margin-top: 0px 12px; 
+}
+.js-name{
+  display: inline-block;
+  margin-top: 0px ;
+  margin-bottom: 0px; 
+}
+
+/*This is the react code*/
+.post-like-div{
+  position: relative;
+  top: 2px;
+}
+.post-like-color-div{
+  position: absolute;
+  top: -2px;
+  visibility: hidden;
+}
+.post-like-color-div-show{
+  visibility: visible;
+}

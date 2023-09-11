@@ -1,0 +1,145 @@
+div.notification-toggle-div{
+  border-top-right-radius: 20px;
+  width: 25rem;
+  background-color: rgb(250, 250, 250);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+  visibility: hidden;
+  left: -90%;
+  margin-left: 55px;
+  transition: 0.7s ease-in-out;
+  z-index: 2;
+}
+.notification-div-active{
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 10px;
+}
+div.notification-toggle-show{
+  visibility: visible;
+  left: 9px;
+}
+div.notification-if-user-followed{
+  display: flex;
+  column-gap: 20px;
+  margin-left: 20px;
+}
+.notification-text-div{
+  font-size: 27px;
+  font-weight: 700;
+  margin-left: 22px;
+}
+.notification-date-text{
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 22px;
+}
+
+/* notification types segment*/
+.image-of-who-followed-user{
+  width: 55px;
+  border-radius: 55px;
+  border: 2px solid rgb(245, 2, 172);
+}
+.name-of-who-followed-user-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.started-following-you{
+  font-size: 14px;
+  margin-top: 5px;
+}
+.notification-follow-button{
+  background-color: rgb(0, 174, 255);
+  border: none;
+  color: white;
+  padding: 7px 25px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+div.notification-if-user-followed:hover{
+  background-color: rgb(231, 229, 229);
+  cursor: pointer;
+  transition: 0.5 ease;
+  border-radius: 5px;
+}
+
+
+/*notification commented segment*/
+.photo-commented-on{
+  width: 50px;
+}
+div.notification-if-user-commented{
+  display: flex;
+  column-gap: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+div.notification-if-user-commented:hover{
+  background-color: rgb(240, 240, 240);
+  padding-top: 10px;
+}
+.notification-text-div{
+  font-size: 27px;
+  font-weight: 700;
+  margin-left: 22px;
+}
+.notification-date-text{
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 22px;
+}
+
+/* notification types segment*/
+.image-of-who-commented-user{
+  width: 55px;
+  border-radius: 55px;
+  border: 2px solid rgb(245, 2, 172);
+}
+.name-of-who-commented-user-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.commented-on-picture-or-video{
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/*notification a week update*/
+.notification-week-update{
+  border-top: 2px solid rgb(233, 232, 232);
+  margin-top: 12px;
+}
+.notification-this-week-text{
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 25px;
+  padding-bottom: 1rem;
+}
+
+/* follow back*/
+.notification-follow-back{
+  background-color: rgb(245, 240, 240);
+  color: black;
+}
+
+.notification-follow-back-two{
+  background-color: rgb(245, 240, 240);
+  color: black;
+}

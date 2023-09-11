@@ -1,0 +1,70 @@
+.more-toggle-container{
+  position: fixed;
+  background-color: rgb(238, 236, 236);;
+  top: 23vh;
+  padding-left: 10px;
+  padding-right: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 200px;
+  visibility: hidden;
+}
+.more-toggle-container-show{
+  visibility: visible;
+}
+.more-settings,.your-activities,.more-saved,.more-switch-appearance,.report-problem{
+   display: flex;
+   flex-direction: row;
+   column-gap: 10px;
+   padding: 5px;
+}
+.more-settings:hover,.your-activities:hover,.more-saved:hover
+,.more-switch-appearance:hover,.report-problem:hover{
+  background-color: rgb(207, 206, 206);
+  border-radius: 20px;
+  cursor: pointer;
+  padding-right: 15rem ;
+}
+.more-settings-images,.more-saved-icon{
+  width: 20px;
+  margin-top: 14px;
+}
+.more-settings-text{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.more-switch-account-div:hover
+,.log-out-div:hover{
+ cursor: pointer;
+ background-color: lightblue;
+ padding-top: 10px;
+ padding-left: 10px;
+ background-color: rgb(207, 206, 206);
+ border-radius: 20px;
+}
+
+/* activities segment*/
+
+.more-activities-icon{
+  width: 20px;
+  margin-top: 13px;
+}
+.your-activities-text{
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.more-switch-account-div,.log-out-div{
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.more-switch-account,.more-log-out{
+  font-size: 15px;
+}
+.more-container-active{
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 10px;
+}

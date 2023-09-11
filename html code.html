@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css codes/css code.css ">
+  <link rel="stylesheet" href="/css codes/search bar toggle.css">
+  <link rel="stylesheet" href="/css codes/message toggle.css">
+  <link rel="stylesheet" href="/css codes/explore toggle.css">
+  <link rel="stylesheet" href="/css codes/reel toggle.css">
+  <link rel="stylesheet" href="/css codes/notification toggle.css">
+  <link rel="stylesheet" href="/css codes/create toggle.css">
+  <link rel="stylesheet" href="/css codes/more toggle.css">
+  <link rel="stylesheet" href="/css codes/comment display.css">
+  <link rel="stylesheet" href="/css codes/share post.css">
+  <link rel="stylesheet" href="/css codes/display more.css">
+</head>
+<body>
+
+  <div class="story-images">
+    <div class="fisayo-fosudo-profile-picture">
+      <img src="/images for website/before fodadu-01.png"  class="story-one">
+      <p class="nameone">Fisayo_fosudo</p>
+      <p class="tool-tip">
+        View Fisayo_fosudo's story
+      </p>
+    </div>
+
+    <div class="David_micheal-profile-picture">
+      <img src="/images for website/birthday girl-01.png" class="story-two">
+      <p class="nameone">David_micheal</p>
+      <p class="tool-tip">
+        View David_micheal's story
+      </p>
+    </div>
+
+    <div class="Dev-slopes-profile-picture">
+      <img src="/images for website/bored ape boy.jpg" class="story-three" >
+      <p class="nameone">Dev-slopes</p>
+      <p class="tool-tip">
+        View Dev-slopes's story
+      </p>
+    </div>
+
+    <div class="Prosper_js-profile-picture">
+      <img src="/images for website/bose man-01.jpg" class="story-four">
+      <p class="nameone">Prosper_js</p>
+      <p class="tool-tip">
+        View Prosper_js's story
+      </p>
+    </div>
+
+    <div class="Cristiano_ronaldo-profile-picture">
+      <img src="/images for website/breakage mad-01.png" class="story-five">
+      <p class="nameone">Cristiano_ronaldo</p>
+      <p class="tool-tip">
+        View Cristiano_ronaldo's story
+      </p>
+    </div>
+
+    <div class="Funke_akindele-profile-picture">
+      <img src="/images for website/Dax-01.png" class="story-six">
+      <p class="nameone">Funke_akindele</p>
+      <p class="tool-tip">
+        View Funke_akindele's story
+      </p>
+    </div>
+    <div class="George-paper-profile-picure">
+      <img src="/images for website/juice world-01.png" class="story-seven">
+      <p class="nameone">George paper</p>
+      <p class="tool-tip">
+        View George paper's story
+      </p>
+    </div>
+
+    <div class="Mr_Beast-profile-picture">
+      <img src="/images for website/post malne-01.png" class="story-eight">
+      <p class="nameone">Mr_Beast</p>
+      <p class="tool-tip">
+        View Mr_Beast's story
+      </p>
+    </div>
+  </div><!--end of story image container-->
+
+<!--Post segment-->
+  <div class="posts">
+    <img src="/images for website/bose man-01.jpg" class="profile-picture">
+    <p class="profile-name">Prosper_js</p>
+    <img src="/images for website/verification icon.png" class="verification-icon">
+    <p class="time">&#183;21m</p>
+    <img src="/images for website/more icon.png" class="more-icon" onclick= "displayMore()">
+
+
+    <div class="posted-picture-container">
+      <img class="posted-picture" src="/images for website/outside-01.png"> <!--End of post segment-->
+
+      <div class="react-container">
+        <div class="post-like-div">
+          <img src="/images for website/love.png" class="js-like-button" onclick="like()">
+        <div class="post-like-color-div" onclick="changeLike()">
+          <img src="/images for website/redicons8-love-48.png" class="like-change-color">
+        </div><!--end of post-like-color-div-->
+        </div><!--end of like segment-->
+        <img src="/images for website/comment.png" onclick="commentOnPost()">
+        <img src="/images for website/share.png" onclick="sharePost()">
+        <img src="/images for website/save icon.png" class="save-icon">
+      </div><!--end of react container-->
+      <div>
+        <p class="display-like"> <span class="js-span-count"></span></p>
+      </div>
+      <p class="comment">View all comment</p><!--View comment-->
+    </div><!--end of posted picture container-->
+  </div><!--end of post container-->
+ 
+   
+  <!--THE LEFT MENU CODES-->
+
+  <div class="left-menu">
+   <div class="instagram-logo-container">
+    <p class="instagram-logo">Instagram</p>
+   </div>
+   <div class="home-container" onclick="reloadhome()">
+    <img src="/images for website/icons8-home-24.png" class="home-image">
+    <p class="home">Home</p>
+   </div>
+
+   <div class="search-container"  onclick="toggleSearchBar()" class="js-search-bar-toggle">
+    <img src="/images for website/icons8-search-50.png">
+    <p>Search</p>
+  </div>
+
+   <div class="explore-container js-explore-container" onclick="explore()">
+    <img src="/images for website/icons8-explore-64.png">
+    <p>Explore</p>
+   </div>
+
+   <div class="reels-container js-reels-container" onclick="reel()">
+    <img src="/images for website/icons8-instagram-reels-50.png">
+    <p>Reels</p>
+   </div>
+   <div class="message-container js-message-grid" onclick="messages()">
+    <img src="/images for website/chat image.png">
+    <p>Messages</p>
+   </div>
+   <div class="love-container js-notification-container" onclick="notification()">
+    <div class="love-container-count">
+      <img src="/images for website/love.png">
+     <div class="counter">9+</div>
+    </div>
+    <p>Notifications</p>
+   </div>
+   <div class="create-container" onclick="create()">
+    <img src="/images for website/add-plus-icon-28.png">
+    <p>Create</p>
+   </div>
+   <div class="profile-container">
+    <img src="/images for website/bose man-01.jpg">
+    <p>Profile</p>
+   </div>
+   <div class="more-container js-more-container" onclick="more()">
+    <img src="/images for website/hamburgermenu.png">
+    <p>More</p>
+   </div>
+  </div><!--End of left menu container-->
+
+
+  <div class="right-menu">
+    <div class="profile-right-container">
+      <img src="/images for website/bose man-01.jpg" class="profile-picture-right">
+      <div class="profile-name-container">
+        <p class="js-name">Prosper_js</p>
+        <p>prosper</p>
+      </div>
+      <div class="switch-container">
+        <p class="switch">Switch</p>
+      </div>
+    </div>
+   
+    <div class="Suggested-for-you-container">
+      <p>Suggested for you</p>
+      <p class="see-all">See All</p>
+    </div>
+
+    <div class="Suggested-for-you">
+      <img src="/images for website/prospi comic studious.png" class="Suggested-profile-picture">
+
+      <div class="Suggested-for-you-name">
+        <p class="Suggested-for-you-name-text">jaden-smith</p>
+        <p class="Suggested-for-you-text">Suggested for you</p>
+      </div>
+      <div class="follow">
+        <p class="js-follow" onclick="follow()">follow</p>
+      </div>
+    </div>
+  </div><!--End of right menu container-->
+
+    <!--search toggle codes-->
+  <div class="search-bar-toggle js-toggle">
+    <p class="search-text">Search</p>
+   <div class="search-bar-container">
+    <input type="text" class="search-bar js-search-bar" placeholder="search" onkeydown="searchForUser(event);">
+
+    <div class="search-search">
+      <img src="/images for website/icons8-search-50.png" class="search-image">
+    </div>
+   </div>
+
+    
+   <div class="user-search-display">
+   
+    </div><!--end of user search display-->
+   </div><!--End-->
+
+
+   <!--begining of explore div-->
+   <div class="explore-div">
+      <div class="explore-images-grid">
+       <div class="first-meme">
+        <img src="/images for website/car image .jpg" class="meme-one">
+        <div class="copy-icon">
+          <img src="/images for website/white copy.png" class="copy-icon-image">
+        </div><!--end of copy icon-->
+        <div class="reaction-displayed-hover">
+          <div class="love-displayed-hover">
+           <img src="/images for website/white love.png">
+           <p class="love-hover-count">200</p>
+          </div>
+          <div class="comment-displayed-hover">
+           <img src="/images for website/white comment.png">
+           <p class="comment-count-hover">400</p>
+          </div>
+         </div>
+      </div><!--end of first meme-->
+
+       <div class="first-meme">
+        <img src="/images for website/meme-two.jpg" class="meme-one">
+        <div class="copy-icon">
+          <img src="/images for website/white copy.png" class="copy-icon-image">
+        </div><!--end of copy icon-->
+        <div class="reaction-displayed-hover">
+           <div class="love-displayed-hover">
+            <img src="/images for website/white love.png">
+            <p class="love-hover-count">200</p>
+           </div>
+           <div class="comment-displayed-hover">
+            <img src="/images for website/white comment.png">
+            <p class="comment-count-hover">400</p>
+           </div>
+          </div>
+      </div><!--end of first meme-->
+
+       <div class="video-container">
+        <div class="reels">
+          <video controls autoplay muted loop>
+            <source src="/images for website/VID-20220913-WA0038.mp4" type="video/mp4">
+            <!-- Add additional source elements for different video formats if needed -->
+          </video>
+          <div class="reels-icon">
+            <img src="/images for website/icons8-instagram-reels-50.png" class="copy-icon-image">
+          </div><!--end of copy icon-->
+        </div>
+      </div>
+       <div class="first-meme">
+        <img src="/images for website/meme.jpg" class="meme-one">
+        <div class="copy-icon">
+          <img src="/images for website/white copy.png" class="copy-icon-image">
+        </div><!--end of copy icon-->
+        <div class="reaction-displayed-hover">
+          <div class="love-displayed-hover">
+           <img src="/images for website/white love.png">
+           <p class="love-hover-count">200</p>
+          </div>
+          <div class="comment-displayed-hover">
+           <img src="/images for website/white comment.png">
+           <p class="comment-count-hover">400</p>
+          </div>
+         </div>
+      </div><!--end of first meme-->
+       <div class="first-meme">
+        <img src="/images for website/post malne-01.png" class="meme-one">
+        <div class="copy-icon">
+          <img src="/images for website/white copy.png" class="copy-icon-image">
+        </div><!--end of copy icon-->
+        <div class="reaction-displayed-hover">
+          <div class="love-displayed-hover">
+           <img src="/images for website/white love.png">
+           <p class="love-hover-count">200</p>
+          </div>
+          <div class="comment-displayed-hover">
+           <img src="/images for website/white comment.png">
+           <p class="comment-count-hover">400</p>
+          </div>
+         </div>
+      </div><!--end of first meme-->
+      </div><!--end of explore-images-grid-->
+     
+  </div><!--End of explore div-->
+ 
+
+   <div class="message-toggle">
+     <div class="fixed-message-top">
+      <div class="name-div">
+        <p class="message-name">Prosper_js</p>
+          <div class="drop-down-icon-container">
+            <img src="/images for website/drop down image.png" alt="drop-down-image" class="drop-down-icon" onclick="dropDownSwitchAccount()">
+
+            <div class="content-of-drop-down">
+               <div class="switch-account-message-container">
+                  <p class="switch-account-message">Switch Account</p>
+               </div>
+               <div class="user-switch-account-container">
+                  <p class="user-switch-account">Prosper_js</p>
+                  <input type="radio">
+               </div>
+            </div>
+          </div>
+        <img src="/images for website/new message iconpng.png" class="new-message-icon">
+      </div><!--end of name div-->
+      <!-- message div-->
+ 
+     <div class="message-request-div">
+         <p class="message-text">Messages</p>
+         <p class="message-request">3 Requests</p>
+      </div>
+   </div><!--end of fixed div-->
+      
+               
+                <!--  This is  the  place  for  the  message  receiver   for  the  user   -->      
+                <!--first one-->
+                <div class="message-receiver-profile">
+                  <div class="juiceworld-image-profile-picture">
+                    <img src="/images for website/juice world-01.png" class="message-profile">
+                    <div class="message-user-active-indicator">
+                   
+                    </div>
+                  </div><!--end of juiceworld-image-profile-picture"-->
+                  
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">Cristiano ronaldo</p>
+                    <img src="/images for website/verification icon.png" class="message-verification-icon-cristiano">
+                    <p class="message-profile-time">Text me on whatapp please...&#183; <span class="message-time">3w</span></p>
+                  </div>
+                </div><!--end message-receiver-profile-->
+
+              <!--second one-->
+                <div class="message-receiver-profile">
+                  <div class="juiceworld-image-profile-picture">
+
+                      <img src="/images for website/birthday girl-01.png" class="message-profile">
+                      <div class="message-user-active-indicator">
+
+                      </div><!--end of message-user-active-indicator-->
+                  </div><!-- end of juiceworld-image-profile-picture-->
+
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">BDB</p>
+                    <img src="/images for website/verification icon.png" class="message-verification-icon">
+                    <p class="message-profile-time">How far bro let us go and ball...&#183; <span class="message-time">3w</span></p>
+                  </div>
+                </div><!--end message-receiver-profile-->
+
+
+                <!--third one-->
+
+                <div class="message-receiver-profile">
+                  <div class="juiceworld-image-profile-picture">
+                      <img src="/images for website/Dax-01.png" class="message-profile">
+                      <div class="message-user-active-indicator">
+
+                      </div><!--end of message-user-active-indicator-->
+                  </div><!--end of juiceworld-image-profile-picture-->
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">Vin diesel</p>
+                    <p class="message-profile-time">Do you know how many times...&#183; <span class="message-time">4d</span></p>
+                  
+                  </div>
+                </div><!--end message-receiver-profile-->
+
+
+                <!--fourth one-->
+                <div class="message-receiver-profile">
+                  <img src="/images for website/breakage mad-01.png" class="message-profile">
+                  
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">Paul walker</p>
+                    <p class="message-profile-time">You: I think bitcoin would rise ...&#183; <span class="message-time">3w</span></p>
+                  
+                  </div>
+                </div><!--end message-receiver-profile-->
+
+                
+                <!--fifth one-->
+                <div class="message-receiver-profile">
+                  <img src="/images for website/before fodadu-01.png" class="message-profile">
+                  
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">21 savage</p>
+                    <p class="message-profile-time">You: I have to get there early....&#183; <span class="message-time">3w</span></p>
+                    
+                    </div>
+                  </div><!--end message-receiver-profile-->
+
+                  <!--sixth one-->
+                  <div class="message-receiver-profile">
+                    <div class="juiceworld-image-profile-picture">
+                        <img src="/images for website/bored ape boy.jpg" class="message-profile">
+                        <div class="message-user-active-indicator">
+
+                      </div><!--end of message-user-active-indicator-->
+                    </div><!--end of juiceworld-image-profile-picture-->
+                    
+                    <div class="message-receiver-profile-name">
+                      <p class="message-profile-name">Lil baby</p>
+                      <p class="message-profile-time">I made him cry? my bad lol he...&#183; <span class="message-time">3w</span></p>
+                    
+                    </div>
+                  </div><!--end message-receiver-profile-->
+
+                <!--seventh one-->
+
+                <!--third one-->
+
+                <div class="message-receiver-profile">
+                  <img src="/images for website/prosper BDB with diamond-01.png" class="message-profile">
+                  
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">mark zuckerberg</p>
+                    <p class="message-profile-time">Active 22m &#183; ago</p>
+                  </div>
+                </div><!--end message-receiver-profile-->
+
+                <!--eight one-->
+
+
+                <div class="message-receiver-profile">
+                  
+                  <div class="juiceworld-image-profile-picture">
+                    <img src="/images for website/sidiku again-01.png" class="message-profile">
+                    <div class="message-user-active-indicator">
+
+                    </div><!--end of message-user-active-indicator-->
+                 </div><!--end of juiceworld-image-profile-picture-->
+                  
+                  <div class="message-receiver-profile-name">
+                    <p class="message-profile-name">Elon musk</p>
+                    <p class="message-profile-time">let us make a revolution...&#183; <span class="message-time">4d</span></p>
+                  </div>
+                </div><!--end message-receiver-profile-->
+
+                <!-- This is  the  end of   the   message  receiver  for  the   user -->
+                <div class="right-message-grid ">
+                  <div class="chat-place">
+                    <div class="message-chat-icon-container">
+                      <img src="/images for website/chat image.png" class="message-chat-icon">
+                    </div><!--end of image div-->
+                    <p class="your-messages">Your messages</p>
+                    <p class="send-private-messages">Send private photos and messages to a friend or group</p>
+                    <button class="send-message">Send message</button>
+                  </div><!--end of chat place-->
+                </div><!--end of right messge grid-->
+      
+   </div><!--end of message toggle-->
+
+
+   <!-- create post segment-->
+   <div class="create-post">
+      <div class="create-post-content">
+          <p class="create-post-text">Create new post</p>
+          <div class="post-content-image-container">
+              <img src="/images for website/post-content.png" class="post-content-image">
+              <p class="drag-photos">Drag photos and Videos here</p>
+              <div>
+                <button class="select-from-computer">
+                  Select from computer
+                </button>
+              </div>
+          </div>
+      </div><!--end of create-post-content-->
+
+      <div class="cancel-create-post" onclick="cancelCreate()">
+          x
+          <div class="tooltip-for-cancel">
+              Close
+          </div>
+      </div><!--End of cancel create-->
+   </div><!--end of create-post -->
+
+     <!-- notification segment-->
+     <div class="notification-toggle-div">
+        <div class="notification-text-div">
+          <p class="notification-text">Notifications</p>
+        </div><!--end of notification-->
+        <div class="notification-date-div">
+          <p class="notification-date-text">Today</p>
+        </div>
+
+        <!--This segment is for if user followed-->
+        <div class="notification-if-user-followed">
+            <div class="image-of-who-followed-user-div">
+              <img src="/images for website/sidiku again-01.png" class="image-of-who-followed-user">
+            </div>
+            <div class="name-of-who-followed-user-div">
+               <div><p class="name-of-who-followed-user-text">Victor moses</p></div>
+               <div class="started-following-you">started following you.<span class="time-followed">&#x2022;3h</span></div>
+            </div>
+            <div>
+              <button class="notification-follow-button" onclick="followBack()">Follow</button>
+            </div>
+        </div><!-- end of notification-if-user-followed-->
+
+        <!--segmnt of if user comment-->
+        <div class="notification-if-user-comment">
+
+          <div class="notification-if-user-commented">
+            <div class="image-of-who-followed-user-div">
+              <img src="/images for website/birthday girl-01.png" class="image-of-who-commented-user">
+            </div>
+            <div class="name-of-who-commented-user-div">
+               <div><p class="name-of-who-commented-user-text">onyinyechi ubazue</p></div>
+               <div class="commented-on-picture-or-video">commented:so awesome.<span class="time-followed">&#x2022;6h</span></div>
+            </div>
+            <div>
+              <img src="/images for website/Dax-01.png" class="photo-commented-on">
+            </div>
+        </div><!-- end of notification-if-user-followed-->
+
+        </div><!--end of notification for if user comment-->
+
+        <div class="notification-week-update">
+          <div class="notification-this-week-text">This week</div>
+
+          <!--This segment is for if user followed-->
+            <div class="notification-if-user-followed">
+                <div class="image-of-who-followed-user-div">
+                  <img src="/images for website/prosper BDB with diamond-01.png" class="image-of-who-followed-user">
+                </div>
+                <div class="name-of-who-followed-user-div">
+                  <div><p class="name-of-who-followed-user-text">dev_slopes</p></div>
+                  <div class="started-following-you">started following you.<span class="time-followed">&#x2022;1d</span></div>
+                </div>
+                <div>
+                  <button class="notification-follow-button js-notification-follow-button-two"onclick="followBackTwo()">Follow</button>
+                </div>
+              </div><!-- end of notification-if-user-followed-->
+
+
+              <div class="notification-if-user-followed">
+                <div class="image-of-who-followed-user-div">
+                  <img src="/images for website/juice world-01.png" class="image-of-who-followed-user">
+                </div>
+                <div class="name-of-who-followed-user-div">
+                  <div><p class="name-of-who-followed-user-text">Juice world</p></div>
+                  <div class="started-following-you">started following you.<span class="time-followed">&#x2022;2d</span></div>
+                </div>
+                <div>
+                  <button class="notification-follow-button js-notification-follow-button-three"onclick="followBackThree()">Follow</button>
+                </div>
+              </div><!-- end of notification-if-user-followed-->
+
+              <div class="notification-if-user-followed">
+                <div class="image-of-who-followed-user-div">
+                  <img src="/images for website/breakage mad-01.png" class="image-of-who-followed-user">
+                </div>
+                <div class="name-of-who-followed-user-div">
+                  <div><p class="name-of-who-followed-user-text">Kelvin harts</p></div>
+                  <div class="started-following-you">started following you.<span class="time-followed">&#x2022;3d</span></div>
+                </div>
+                <div>
+                  <button class="notification-follow-button js-notification-follow-button-four"onclick="followBackFour()">Follow</button>
+                </div>
+              </div><!-- end of notification-if-user-followed-->
+              <div class="notification-if-user-followed">
+                <div class="image-of-who-followed-user-div">
+                  <img src="/images for website/bored ape boy.jpg" class="image-of-who-followed-user">
+                </div>
+                <div class="name-of-who-followed-user-div">
+                  <div><p class="name-of-who-followed-user-text">Bored Ape yatch club</p></div>
+                  <div class="started-following-you">started following you.<span class="time-followed">&#x2022;3d</span></div>
+                </div>
+                <div>
+                  <button class="notification-follow-button js-notification-follow-button-five"onclick="followBackFive()">Follow</button>
+                </div>
+              </div><!-- end of notification-if-user-followed-->
+            </div><!--end of notification-week-update-->
+
+
+            <div class="notification-if-user-followed">
+              <div class="image-of-who-followed-user-div">
+                <img src="/images for website/before fodadu-01.png" class="image-of-who-followed-user">
+              </div>
+              <div class="name-of-who-followed-user-div">
+                <div><p class="name-of-who-followed-user-text">lil_baby</p></div>
+                <div class="started-following-you">started following you.<span class="time-followed">&#x2022;4d</span></div>
+              </div>
+              <div>
+                <button class="notification-follow-button js-notification-follow-button-six" onclick="followBackSix()">Follow</button>
+              </div>
+            </div><!-- end of notification-if-user-followed-->
+     </div><!--end of notification toggle-->
+  
+   <!--share segment-->
+  <div class="share-main-container">
+        
+     <div class="share-post-div">
+      <div class="share-text-div">
+        <p class="share-text">Share</p>
+        <div class="cancel-share" onclick="cancelShare()">x</div>
+      </div>
+
+      <div class="share-search-box-div">
+            <p class="share-to-text">To:</p>
+            <input type="text" placeholder="search..." class="share-search-box">
+          </div>
+
+          <div class="Suggested-for-you-share-div">
+            <div class="Suggested-share-text">
+              Suggested
+            </div>
+          </div>
+
+          <!--users to share post -->
+            <div class="scroll-share">
+              
+                <div class="people-to-share-post">
+                  <div>
+                    <img src="/images for website/post malne-01.png" class="people-to-share-post-profile">
+                  </div>
+                  <div class="people-to-share-post-name">
+                      <p class="share-to-name">Prototype</p>
+                      <p class="share-to-user-name">Prototype</p>
+                  </div>
+
+                  <div>
+                    <img src="/images for website/verification icon.png" class="share-to-verified-user">
+
+                  </div>
+                  <input type="radio" class="share-check-box">
+                </div>
+
+                <div class="people-to-share-post">
+                  <div>
+                    <img src="/images for website/post malne-01.png" class="people-to-share-post-profile">
+                  </div>
+                  <div class="people-to-share-post-name">
+                      <p class="share-to-name">Prototype</p>
+                      <p class="share-to-user-name">Prototype</p>
+                  </div>
+
+                  <div>
+                    <img src="/images for website/verification icon.png" class="share-to-verified-user">
+
+                  </div>
+                  <input type="radio" class="share-check-box">
+                </div>
+
+            </div><!--end of scroll share-->
+          <!--end of user share post-->
+          <div class="share-post-to-user-send">
+            <button class="send-post">
+                Send
+            </button>
+          </div>
+      </div><!-- end of share segment-->
+    </div><!--end of share main container-->
+
+
+    <div class="display-more-style js-display-more-style">
+      <p>unavailable now!</p>
+      <p>unavailable now!</p>
+      <p>unavailable now!</p>
+      <p>unavailable now!</p>
+      <p>unavailable now!</p>
+      <p>unavailable now!</p>
+    </div>
+
+    <!--comment display segment-->
+      <div class="comment-on-picture-div">
+        <div class="picture-left-comment">
+         <div>
+          <img src="/images for website/outside-01.png" class="picture-left-comment-image">
+         </div>
+          <div class="peoples-comment">
+            <div class="comment-owner-wrapper">
+              <div class="comment-owner">
+                <img src="/images for website/bose man-01.jpg" class="comment-profile-picture">
+                <p class="comment-profile-name">Prosper_js</p>
+               
+                  <div class="comment-verification-icon-div">
+                    <img src="/images for website/verification icon.png" class="comment-verification-icon">
+                  </div>
+                
+                <p class="comment-follow-button">&#x2022<span class="comment-section-follow">Follow</span></p>
+              </div><!--end of comment-owner-->
+            </div><!--End of comment owner wrapper-->
+
+                 
+            <div class="display-comment-on-page js-display-comment-style">
+
+            </div>
+  
+                          <div class="comment-react-to-post">
+                            <div class="react-container">
+                              <div class="post-like-div">
+                                <img src="/images for website/love.png" class="js-like-button" onclick="like()">
+                              <div class="post-like-color-div" onclick="changeLike()">
+                                <img src="/images for website/redicons8-love-48.png" class="like-change-color">
+                              </div><!--end of post-like-color-div-->
+                              </div><!--end of like segment-->
+                              <img src="/images for website/comment.png">
+                              <img src="/images for website/share.png">
+                              <img src="/images for website/save icon.png" class="save-icon">
+                            </div><!--end of react container-->
+                        </div><!--end of comment react to post container-->
+                       <div class="type-comment-fixed">
+                        <div class="type-comment">
+                          <div>
+                            <input type="text" placeholder="Add comment" class="type-comment-box js-type-comment-box">
+                              <button class="post-comment" onclick="postComment()">
+                                post
+                              </button>
+                          </div>
+                          <div class="emoji-select-icon">
+                              <img src="/images for website/emoji icon.png" class="emoji-select-icon-image">
+                          </div>
+                        </div><!--end of type comment-->
+                       </div><!--end of type comment fixed-->
+                   
+                  </div>
+                  
+                
+          </div>
+        </div>
+        <div class="comment-cancel-div" onclick="removeCommentSegment()">
+          x
+        </div>
+      </div><!-- end of comment display segment-->
+
+
+     <!--more segment-->
+     <div class="more-toggle-container">
+   
+         <div class="more-settings">
+           <div class="more-settings-images-div">
+              <img src="/images for website/more-settings.png" class="more-settings-images">
+           </div>
+            <p class="more-settings-text">Settings</p>
+         </div>
+
+
+         <div class="your-activities">
+            <div class="your-activities-images-div">
+              <img src="/images for website/activities icon.png" class="more-activities-icon">
+            </div>
+            <p class="your-activities-text"> Your activity</p>
+         </div>
+
+         <div class="more-saved">
+          <div class="more-saved-icon-div">
+            <img src="/images for website/save icon.png" class="more-saved-icon">
+          </div>
+          <p class="your-activities-text">saved</p>
+       </div>
+
+       
+       <div class="more-switch-appearance">
+        <div class="more-switch-apperance-div">
+          <img src="/images for website/change apperance icon.png" class="more-saved-icon">
+        </div>
+        <p class="your-activities-text">Switch appearance</p>
+        </div>
+
+
+           
+       <div class="report-problem">
+        <div class="report-problem-div">
+          <img src="/images for website/problem-report-icon.png" class="more-saved-icon">
+        </div>
+        <p class="your-activities-text">Report a problem</p>
+        </div>
+
+
+        <div class="bottom-of-more-toggle">
+          <div class="more-switch-account-div">
+            <p class="more-switch-account">Switch account</p>
+          </div>
+          <div class="log-out-div">
+            <p class="more-log-out">Log out</p>
+          </div>
+        </div>
+      </div><!--end of more-toggle-container-->
+
+    
+   <!--reels segment-->
+   <div class="reels-div">
+      <div class="reels-videos-container">
+        <video controls autoplay muted loop width="350px" class="reels-video">
+          <source src="/images for website/VID-20220913-WA0038.mp4" type="video/mp4" class="reels-video-reels">
+          <!-- Add additional source elements for different video formats if needed -->
+        </video>
+        <div class="reels-react">
+         <div><!--div for reels liike count-->
+          <img src="/images for website/love.png" class="reels-love-icon">
+          <p class="reels-like-count">12.1k</p>
+         </div><!--end of div for reels like count-->
+          <div>
+            <img src="/images for website/comment.png" class="reels-comment-icon">
+            <p class="reels-comment-count">500</p>
+          </div>
+          <img src="/images for website/share.png" class="reels-share-icon">
+          <img src="/images for website/save icon.png" class="reels-save-icon">
+          <img src="/images for website/more icon.png" class="reels-more-icon">
+          <img src="/images for website/bored ape bo
+          y.jpg" class="reels-music-owner-picture">
+      </div>
+      
+      <div class="reels-video-content">
+        <div class="reels-video-profile">
+          <img src="/images for website/bored ape boy.jpg" class="reels-video-profile-picture">
+          <p class="reels-video-profile-picute-name">plutocanapist &#x2022;</p>
+          <p class="reels-video-profile-follow">follow</p>
+        </div><!--end of reels-video-profile-->
+      </div><!--end of "reels-video-content"-->
+
+      <div class="reels-video-description-container">
+        <p class="reels-video-description-text">
+          This is how i comb my hair &#128514;&#128514;
+        </p>
+        <div class="reels-music-segment">
+          <img src="/images for website/music.JPG" class="test-music">
+          <p class="reels-video-profile-picute-name-music">plutocanapist &#x2022; Original audio </p>
+        </div><!--reels-music-segment-->
+      </div><!--reels video-description-->
+   </div><!--end of reels segment-->
+
+   <!--more segment-->
+ 
+  </div>
+  
+  <script src= "/javascript codes/reels-toggle.js"></script>
+  <script src="/javascript codes/explore toggle.js"></script>
+  <script src="/javascript codes/message toggle.js"></script>
+  <script src="/javascript codes/javascipt code.js">
+  </script>
+  <script src="/javascript codes/search  bar toggle.js"></script>
+  <script src="/javascript codes/like-comment-share.js"></script>
+  <script src="/javascript codes/notification toggle.js"></script>
+  <script src="/javascript codes/create toggle.js"></script>
+  <script src="/javascript codes/more toggle.js"></script>
+  <script src="/javascript codes/comment display.js"></script>
+  <script src="/javascript codes/share post.js"></script>
+  <script src="/javascript codes/message dropdown.js"></script>
+  <script src="/javascript codes/home button reload.js"></script>
+  <script src="/javascript codes/display more.js"></script>
+</body>
+</html>
+

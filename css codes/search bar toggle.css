@@ -1,0 +1,97 @@
+.search-bar{
+  padding: 0.8rem;
+  border: none;
+  width: 80%;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 2rem ;
+}
+
+.search-image{
+  width: 21px;
+}
+.search-bar::placeholder{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.search-bar:focus{
+  outline: none;
+}
+.search-text{
+  font-size: 25px;
+  margin-top: 1.5rem;
+  margin-left: 12px;
+}
+.search-bar-toggle{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -390px;
+  background-color:  rgb(250, 250, 250);
+  margin-left: 64px;
+  width: 20rem;
+  border-right: 1px solid rgb(192, 188, 188);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 1px solid rgb(192, 188, 188);
+  transition: left 0.3s ease;
+  z-index: 6;
+}
+
+.search-bar-toggle.active{
+  left: 0;
+}
+.search-bar-container{
+  border-bottom: 1px solid rgb(228, 225, 225);
+  padding-bottom: 42px;
+  position: relative;
+}
+
+.search-search{
+  position: absolute;
+  top: 0;
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}
+
+.search-active{
+  border: 2px solid rgb(224, 223, 223);
+  border-radius: 10px;
+}
+.user-search-display{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.js-searched-user-picture{
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 1rem;
+}
+
+.js-searched-user-picture-container{
+  margin-top: 20px;
+  display: flex;
+  gap: 2rem;
+}
+.js-search-name{
+  margin-top: 1rem;
+}
+
+.cancel-search-user{
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: rgb(113, 196, 252);
+  color: white;
+  width: 50px;
+  font-weight: bolder;
+  border-radius: 100%;
+}
+.cancel-search-user:hover{
+  background-color: rgb(68, 162, 224);
+  color: white;
+}
+
+

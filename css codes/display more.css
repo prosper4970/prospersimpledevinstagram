@@ -1,0 +1,32 @@
+.display-more-style{
+  background-color: rgb(227, 231, 235);
+  font-weight: bold;
+  margin-left: 4%;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  top: 33%;
+  border-radius: 10px;
+  visibility: hidden;
+}
+.display-more-style-show{
+  visibility: visible;
+}
+.display-more-style p{
+  text-align: center;
+}
+.display-more-style p:hover{
+  text-align: center;
+  background-color: rgb(51, 52, 53);
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+.more-icon:hover{
+   background-color: rgb(218, 233, 238);
+   cursor: pointer;
+   padding: 1px;
+   border-radius: 13px;
+}

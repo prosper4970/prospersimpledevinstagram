@@ -1,0 +1,132 @@
+.explore-div{
+  background-color: rgb(243, 243, 245);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: scroll;
+  left: -2035px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.20);
+  visibility:hidden;
+  transition: 1s;
+  z-index: 5;
+}
+.explore-div-active{
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 10px;
+}
+.show-explore{
+  visibility: visible;
+  left: 235px;
+}
+.meme-one{
+  width: 350px;
+  height: 300px;
+}
+.meme-one-first{
+  width: 350px;
+  height: 700px;
+}
+.explore-images-grid{
+  display: grid;
+  grid-template-columns: 355px 355px 1fr;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%; /* Set the aspect ratio based on the video's width and height */
+  overflow: hidden;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 700px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.explore-images-grid img{
+  cursor: pointer;
+}
+.explore-images-grid img:hover{
+  opacity: 0.9;
+  
+}
+.first-meme{
+  position: relative;
+}
+.copy-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.copy-icon-image{
+  width: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+.video-container{
+  position: relative;
+}
+
+.reels-icon{
+  top: 0;
+  margin-left: 310px;
+  margin-top: 12px;
+}
+.video-container:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.reaction-displayed-hover{
+  position: absolute;
+  top: 8rem;
+  left: 5rem;
+  display: flex;
+  column-gap: 45px;
+  opacity: 0;
+}
+.first-meme .reaction-displayed-hover:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.love-displayed-hover{
+  display: flex;
+  height: 40px;
+}
+.love-displayed-hover img{
+  width:30px;
+  height:30px;
+  margin-top: 4px;
+}
+.comment-displayed-hover img{
+  width:30px;
+  height:30px;
+  margin-top: 4px;
+}
+.comment-displayed-hover{
+  display: flex;
+  height:40px;
+  margin-top: -3px;
+}
+.love-hover-count{
+  margin-top: 9px;
+  margin-left: 4px;
+  color: white;
+  font-weight: bolder;
+}
+.comment-count-hover{
+  margin-top: 13px;
+  color: white;
+  font-weight: bolder;
+  margin-left: 4px;
+}
